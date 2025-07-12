@@ -2,6 +2,8 @@ import { verifyWebhook } from "@clerk/nextjs/webhooks";
 
 export async function POST(req) {
   try {
+    console.log('sfsf');
+    
     const evt = await verifyWebhook(req);
 
     // Do something with payload
